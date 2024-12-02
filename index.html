@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="player-names">
+    <div class="p1" id="p1">
+      <input type="text" id="player1" placeholder="player 1">
+      <button onclick="ready1()" id="p1b">Ready 😃</button>
+    </div>
+    <div class="p2" id="p2">
+      <input type="text" id="player2" placeholder="player 2">
+      <button id="p2b" onclick="ready2()" >Ready 😃</button>
+    </div>
+    <div id="starter1" class="starter1">
+      <button id="fight1" onclick="answer1()">Fight</button>
+    </div>
+    <div id="starter2" class="starter2">
+      <button id="fight2" onclick="answer()">Fight</button>
+    </div>
+  </div>
+  
+  <div class="questions">
+    <div id="q1" class="q1">
+      <p>The answer of 1 + 1</p>
+      <div class="answer">
+        <button id="a1" class="answers" onclick="answer()">2</button>
+        <button id="w1" class="answers" onclick="wrong()">11</button>
+      </div>
+    </div>
+  <div id="q2" class="q2">
+      <p>The answer of 11 + 21</p>
+      <div class="answer">
+        <button id="a2" class="answers" onclick="wrong()">22</button>
+        <button class="answers" onclick="answer()">32</button>
+      </div>
+    </div>
+    <div id="q3" class="q3">
+      <p>The answer of 21 - 3</p>
+      <div class="answer">
+        <button id="a3" class="answers" onclick="answer()">18</button>
+        <button class="answers" onclick="wrong()">20</button>
+      </div>
+    </div>
+    <div id="q4" class="q4">
+      <p>The answer of 10 - 11</p>
+      <div class="answer">
+        <button id="a4" class="answers" onclick="wrong()">21</button>
+        <button class="answers" onclick="answer()">-1</button>
+      </div>
+    </div>
+    <div id="q5" class="q5">
+      <p>The answer of 6 - 18</p>
+      <div class="answer">
+        <button id="a5" class="answers" onclick="answer()">-12</button>
+        <button class="answers" onclick="wrong()">24</button>
+      </div>
+    </div>
+    <div id="q6" class="q6">
+      <p>The answer of 3 * 7</p>
+      <div class="answer">
+        <button id="a6" class="answers" onclick="answer()">21</button>
+        <button class="answers" onclick="wrong()">10</button>
+      </div>
+    </div>
+    <div id="q7" class="q7">
+      <p>The answer of 68 ÷ 4</p>
+      <div class="answer">
+        <button id="a7" class="answers" onclick="answer()">17</button>
+        <button class="answers" onclick="wrong()">16</button>
+      </div>
+    </div>
+    <div id="q8" class="q8">
+      <p>The answer of 121 ÷ 11</p>
+      <div class="answer">
+        <button id="a8" class="answers" onclick="wrong()">13</button>
+        <button class="answers" onclick="answer()">11</button>
+      </div>
+    </div>
+    <div id="q9" class="q9">
+      <p>The answer of 8 * 7</p>
+      <div class="answer">
+        <button id="a9" class="answers" onclick="wrong()">34</button>
+        <button class="answers" onclick="answer()">56</button>
+      </div>
+    </div>
+    <div id="q10" class="q10">
+      <p>The answer of 45 - 9</p>
+      <div class="answer">
+        <button id="a10" class="answers" onclick="answer()">36</button>
+        <button class="answers" onclick="wrong()">54</button>
+      </div>
+    </div>
+    <div id="q11" class="q11">
+      <p>The answer of 68 - 12</p>
+      <div class="answer">
+        <button id="a11" class="answers" onclick="answer()">56</button>
+        <button class="answers" onclick="wrong()">76</button>
+      </div>
+    </div>
+    <div id="q12" class="q12">
+      <p>The answer of 5 * 0</p>
+      <div class="answer">
+        <button id="a12" class="answers" onclick="wrong()">5</button>
+        <button class="answers" onclick="answer()">0</button>
+      </div>
+    </div>
+    <div id="q13" class="q13">
+      <p>The answer of 19 - 31</p>
+      <div class="answer">
+        <button id="a13" class="answers" onclick="wrong()">12</button>
+        <button class="answers" onclick="answer()">-12</button>
+      </div>
+    </div>
+    <div id="congra" class="congra">
+    <progress min="0" max="100" value="" id="progres"></progress>
+    <h2 class="message" id="message">congra</h2>
+    <h3 class="message" id="namec">name</h3>
+  </div>
+  </div>
+  
+  
+  <div class="questions1">
+    <div id="qq1" class="qq1">
+      <p>The answer of 1 + 1</p>
+      <div class="answer1">
+        <button id="aa1" class="answers1" onclick="answer1()">2</button>
+        <button id="w1" class="answers1" onclick="wrong1()">11</button>
+      </div>
+    </div>
+  <div id="qq2" class="qq2">
+      <p>The answer of 11 + 21</p>
+      <div class="answer1">
+        <button id="aa2" class="answers1" onclick="wrong1()">22</button>
+        <button class="answers1" onclick="answer1()">32</button>
+      </div>
+    </div>
+    <div id="qq3" class="qq3">
+      <p>The answer of 21 - 3</p>
+      <div class="answer1">
+        <button id="aa3" class="answers1" onclick="answer1()">18</button>
+        <button class="answers1" onclick="wrong1()">20</button>
+      </div>
+    </div>
+    <div id="qq4" class="qq4">
+      <p>The answer of 10 - 11</p>
+      <div class="answer1">
+        <button id="aa4" class="answers1" onclick="wrong1()">21</button>
+        <button class="answers1" onclick="answer1()">-1</button>
+      </div>
+    </div>
+    <div id="qq5" class="qq5">
+      <p>The answer of 6 - 18</p>
+      <div class="answer1">
+        <button id="aa5" class="answers1" onclick="answer1()">-12</button>
+        <button class="answers1" onclick="wrong1()">24</button>
+      </div>
+    </div>
+    <div id="qq6" class="qq6">
+      <p>The answer of 3 * 7</p>
+      <div class="answer1">
+        <button id="aa6" class="answers1" onclick="answer1()">21</button>
+        <button class="answers1" onclick="wrong1()">10</button>
+      </div>
+    </div>
+    <div id="qq7" class="qq7">
+      <p>The answer of 68 ÷ 4</p>
+      <div class="answer1">
+        <button id="aa7" class="answers1" onclick="answer1()">17</button>
+        <button class="answers1" onclick="wrong1()">16</button>
+      </div>
+    </div>
+    <div id="qq8" class="qq8">
+      <p>The answer of 121 ÷ 11</p>
+      <div class="answer1">
+        <button id="aa8" class="answers1" onclick="wrong1()">13</button>
+        <button class="answers1" onclick="answer1()">11</button>
+      </div>
+    </div>
+    <div id="qq9" class="qq9">
+      <p>The answer of 8 * 7</p>
+      <div class="answer1">
+        <button id="aa9" class="answers1" onclick="wrong1()">34</button>
+        <button class="answers1" onclick="answer1()">56</button>
+      </div>
+    </div>
+    <div id="qq10" class="qq10">
+      <p>The answer of 45 - 9</p>
+      <div class="answer1">
+        <button id="aa10" class="answers1" onclick="answer1()">36</button>
+        <button class="answers1" onclick="wrong1()">54</button>
+      </div>
+    </div>
+    <div id="qq11" class="qq11">
+      <p>The answer of 68 - 12</p>
+      <div class="answer1">
+        <button id="aa11" class="answers1" onclick="answer1()">56</button>
+        <button class="answers1" onclick="wrong1()">76</button>
+      </div>
+    </div>
+    <div id="qq12" class="qq12">
+      <p>The answer of 5 * 0</p>
+      <div class="answer1">
+        <button id="aa12" class="answers1" onclick="wrong1()">5</button>
+        <button class="answers1" onclick="answer1()">0</button>
+      </div>
+    </div>
+    <div id="qq13" class="qq13">
+      <p>The answer of 19 - 31</p>
+      <div class="answer1">
+        <button id="aa13" class="answers1" onclick="wrong1()">12</button>
+        <button class="answers1" onclick="answer1()">-12</button>
+      </div>
+    </div>
+    <div id="congra1" class="congra1">
+    <progress min="0" max="100" value="" id="progres1"></progress>
+    <h2 class="message" id="message1">congra</h2>
+    <h3 class="message1" id="namec1">name</h3>
+  </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
